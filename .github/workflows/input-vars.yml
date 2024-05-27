@@ -30,7 +30,12 @@ on:
              - gcp
              - oracle
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs: 
+  call-aws-workflow:
+    uses: ./.github/workflows/aws.yml
+    with: 
+      msg: ${{ github.events.inputs.mensagem }}
+    secrets: inherit
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
