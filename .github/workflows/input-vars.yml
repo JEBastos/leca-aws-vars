@@ -16,12 +16,12 @@ on:
         mensagem:
           type: string
           required: true
-      cafe:
+        cafe:
          type: boolean
          description: Vamos tomar cafe
-      ambiente:
+        ambiente:
          type: environment
-      nuvem:
+        nuvem:
           type: choice
           description: Escolha a nuvem onde pretende tabalhar
           options: 
