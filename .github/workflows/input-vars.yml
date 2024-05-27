@@ -17,14 +17,14 @@ on:
           type: string
           required: true
         cafe:
-         type: boolean
-         description: Vamos tomar cafe
+           type: boolean
+           description: Vamos tomar cafe
         ambiente:
-         type: environment
+           type: environment
         nuvem:
-          type: choice
-          description: Escolha a nuvem onde pretende tabalhar
-          options: 
+            type: choice
+            description: Escolha a nuvem onde pretende tabalhar
+            options: 
              - aws
              - azure
              - gcp
